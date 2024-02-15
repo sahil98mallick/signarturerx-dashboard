@@ -57,6 +57,7 @@ import cancelorder from "../../public/images/cancelorder.png";
 import map_demo from "../../public/images/map_demo.jpg";
 import markerbg from "../../public/images/markerbg.png";
 import payOrder from "../../public/images/pay_your_order.svg";
+import DummyAuthBg from "../../public/images/preview.jpg";
 
 const assest = {
   Logo,
@@ -109,6 +110,7 @@ const assest = {
   handicon,
   payOrder,
   avatar_demo_frame,
-  map_demo
+  map_demo,
+  DummyAuthBg
 };
 export default assest;

@@ -34,6 +34,20 @@ export interface IloginData {
   refresh: string;
   firstLogin: string;
 }
+export interface IsignupData{
+  pharmacyName: string;
+  name:string;
+  surname:string;
+  email: string;
+  phone: number;
+  password:number;
+  confirmPassword:number;
+
+}
+
+export interface Iforgetpass{
+  email: string
+}
 export enum UserRoleEnum {
   branch_admin = "branch_admin",
   admin = "admin",

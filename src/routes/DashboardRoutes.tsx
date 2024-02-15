@@ -2,6 +2,9 @@ import PageLoaders from "components/Loders/PageLoaders";
 import React from "react";
 import { Navigate, RouteObject } from "react-router";
 import ProtectedRouteWrapper from "./ProtectedRoute";
+import Signup from "pages/auth/Signup/Signup";
+import ResetPassword from "pages/auth/reset/ResetPassword";
+import ForgetPassword from "pages/auth/forget/Forgetpass";
 
 /* These lines of code are using the React.lazy function to dynamically import the components for each
 route. React.lazy is a function that allows for lazy loading of components, meaning that the
@@ -49,6 +52,30 @@ const DashBoardRoutes: RouteObject[] = [
     element: (
       <PageLoaders>
         <Login />
+      </PageLoaders>
+    )
+  },
+  {
+    path: "/auth/signup",
+    element: (
+      <PageLoaders>
+        <Signup />
+      </PageLoaders>
+    )
+  },
+  {
+    path: "/auth/resetpassword",
+    element: (
+      <PageLoaders>
+        <ResetPassword/>
+      </PageLoaders>
+    )
+  },
+  {
+    path: "/auth/forgetpass",
+    element: (
+      <PageLoaders>
+        <ForgetPassword/>
       </PageLoaders>
     )
   },

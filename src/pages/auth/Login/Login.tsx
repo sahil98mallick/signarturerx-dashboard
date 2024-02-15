@@ -149,7 +149,7 @@ const Login = () => {
                   </Box>
                   <Box mb={2} className="loginSubmitButton">
                     <Link
-                      to="#"
+                      to="/auth/forgetpass"
                       style={{ textDecoration: "none" }}
                     >
                       <Typography>Forgotten password?</Typography>
@@ -162,6 +162,11 @@ const Login = () => {
                       variant="contained"
                       color="success"
                       fullWidth
+                      onClick={() =>
+                        navigate("/auth/signup", {
+                          replace: true
+                        })
+                      }
                     >
                       <Typography>Create account</Typography>
                     </CustomButtonPrimary>
